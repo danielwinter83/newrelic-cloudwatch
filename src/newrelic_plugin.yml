@@ -1,7 +1,7 @@
 # Please make sure to update the license_key information with the
 # license key for your New Relic account.
 #
-newrelic:
+ newrelic:
   #
   # Update with your New Relic account license key:
   #
@@ -14,7 +14,7 @@ newrelic:
 #
 # AWS configuration.
 #
-aws:
+ aws:
   # Update with you AWS account keys:
   access_key: 'YOUR_AWS_ACCESS_KEY_HERE'
   secret_key: 'YOUR_AWS_SECRET_KEY_HERE'
@@ -36,7 +36,7 @@ aws:
 #
 # Agent configuration.
 #
-agents:
+ agents:
   #
   # Enable/disable agents with the enabled attribute or by commenting out each agent.
   #
