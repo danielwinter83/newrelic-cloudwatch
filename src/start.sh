@@ -26,9 +26,9 @@ fi
 
 
 echo "Replacing keys"
-sed -e "s/YOUR_LICENSE_KEY_HERE/$NEWRELIC_KEY/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
-sed -e "s/YOUR_AWS_ACCESS_KEY_HERE/$AWS_ACCESS_KEY/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
-sed -e "s/YOUR_AWS_SECRET_KEY_HERE/$AWS_SECRET_KEY/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
+sed -e "s#YOUR_LICENSE_KEY_HERE#$NEWRELIC_KEY#g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
+sed -e "s#YOUR_AWS_ACCESS_KEY_HERE#$AWS_ACCESS_KEY#g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
+sed -e "s#YOUR_AWS_SECRET_KEY_HERE#$AWS_SECRET_KEY#g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
 
 echo "Replacing settings"
 sed -e "s/EC2_ENABLED/$EC2_ENABLED/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
