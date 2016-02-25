@@ -38,7 +38,6 @@ sed -e "s/RDS_ENABLED/$RDS_ENABLED/g" -i /usr/local/newrelic_aws_cloudwatch_plug
 sed -e "s/SQS_ENABLED/$SQS_ENABLED/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
 sed -e "s/SNS_ENABLED/$SNS_ENABLED/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
 sed -e "s/EC_ENABLED/$EC_ENABLED/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
-sed -e "s/EBS_ENABLED/$EC_ENABLED/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
 sed -e "s/ECR_ENABLED/$ECR_ENABLED/g" -i /usr/local/newrelic_aws_cloudwatch_plugin-latest/config//newrelic_plugin.yml && \
 
 echo "Starting new relic aws plugin agent..."
